@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pipeline Africa: Learn. Build. Contribute.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo" aria-label="Pipeline Africa home">
+      <img class="nav-logo-icon" src="pa_icon_mark_dark.svg" alt="Pipeline Africa logo">
+      <div class="nav-logo-text">
+        <div class="nav-logo-name">PIPELINE</div>
+        <div class="nav-logo-africa">AFRICA</div>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#workshops">Workshops</a></li>
+      <li><a href="#open-lab">Open Lab</a></li>
+      <li><a href="#datasets">Datasets</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="#join" class="btn btn-green nav-cta">Join Community</a>
+      <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about" onclick="toggleNav()">About</a>
+    <a href="#workshops" onclick="toggleNav()">Workshops</a>
+    <a href="#open-lab" onclick="toggleNav()">Open Lab</a>
+    <a href="#datasets" onclick="toggleNav()">Datasets</a>
+    <a href="#community" onclick="toggleNav()">Community</a>
+    <a href="#blog" onclick="toggleNav()">Blog</a>
+    <a href="#join" class="btn btn-green" onclick="toggleNav()">Join Community</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-dots"></div>
+
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Open-Source Community
+      </div>
+
+      <h1 class="hero-title">
+        Building Africa's<br>
+        <em>Data Engineering</em><br>
+        Future.
+      </h1>
+
+      <p class="hero-sub">
+        An open-source community helping Africans learn data engineering by building real-world projects with industry experts.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#join" class="btn btn-green btn-lg">Join Community</a>
+        <a href="https://github.com/Pipeline-Africa" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+          Contribute on GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- ─── Pipeline Data Engineering Visual ─── -->
+    <div class="hero-visual">
+      <svg class="pipeline-svg" viewBox="0 0 460 480" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <!-- Outer ring -->
+        <circle cx="230" cy="240" r="196" stroke="rgba(10,124,94,0.12)" stroke-width="1"/>
+        <!-- Inner ring dashed -->
+        <circle cx="230" cy="240" r="140" stroke="rgba(10,124,94,0.1)" stroke-width="1" stroke-dasharray="5 9"/>
+
+        <!-- Africa continent (simplified shape) -->
+        <path d="
+          M 222 100
+          C 238 96, 256 104, 265 120
+          C 276 138, 278 162, 270 182
+          C 280 196, 286 214, 284 232
+          C 290 244, 295 260, 290 276
+          C 283 292, 268 302, 261 318
+          C 257 332, 254 348, 246 360
+          C 238 372, 226 378, 214 374
+          C 202 370, 193 358, 188 344
+          C 182 330, 180 314, 176 300
+          C 168 284, 159 270, 157 254
+          C 154 238, 157 222, 165 208
+          C 157 194, 154 178, 160 162
+          C 167 146, 180 136, 194 128
+          C 203 122, 213 102, 222 100 Z
+        " fill="rgba(10,124,94,0.12)" stroke="rgba(10,124,94,0.45)" stroke-width="1.5"/>
+
+        <!-- Node: Code  (top-left) -->
+        <g id="node-code" transform="translate(96, 110)">
+          <rect x="-32" y="-32" width="64" height="64" rx="14"
+                fill="#162032" stroke="rgba(10,124,94,0.55)" stroke-width="1.5"/>
+          <text x="0" y="6" text-anchor="middle"
+                font-family="'Courier New', monospace" font-size="15"
+                fill="#0d9e78" font-weight="700">&lt;/&gt;</text>
+        </g>
+
+        <!-- Node: Database  (top-right) -->
+        <g id="node-db" transform="translate(368, 152)">
+          <rect x="-32" y="-32" width="64" height="64" rx="14"
+                fill="#162032" stroke="rgba(10,124,94,0.55)" stroke-width="1.5"/>
+          <ellipse cx="0" cy="-10" rx="16" ry="6" stroke="#0d9e78" stroke-width="1.5"/>
+          <line x1="-16" y1="-10" x2="-16" y2="7"  stroke="#0d9e78" stroke-width="1.5"/>
+          <line x1="16"  y1="-10" x2="16"  y2="7"  stroke="#0d9e78" stroke-width="1.5"/>
+          <ellipse cx="0" cy="7"   rx="16" ry="6" stroke="#0d9e78" stroke-width="1.5"/>
+        </g>
+
+        <!-- Node: Analytics  (bottom-left) -->
+        <g id="node-chart" transform="translate(82, 358)">
+          <rect x="-32" y="-32" width="64" height="64" rx="14"
+                fill="#162032" stroke="rgba(10,124,94,0.55)" stroke-width="1.5"/>
+          <polyline points="-16,12 -6,-6 4,6 14,-14"
+                    stroke="#0d9e78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+
+        <!-- Node: Community (bottom-right) -->
+        <g id="node-people" transform="translate(370, 348)">
+          <rect x="-32" y="-32" width="64" height="64" rx="14"
+                fill="#162032" stroke="rgba(10,124,94,0.55)" stroke-width="1.5"/>
+          <circle cx="-8" cy="-8" r="7" stroke="#0d9e78" stroke-width="1.5"/>
+          <circle cx="10" cy="-8" r="7" stroke="#0d9e78" stroke-width="1.5"/>
+          <path d="M-20,12 Q-8,4 1,8 Q10,4 22,12" stroke="#0d9e78" stroke-width="1.5" stroke-linecap="round"/>
+        </g>
+
+        <!-- Center: PA logo hub -->
+        <g>
+          <circle cx="230" cy="240" r="48" fill="rgba(10,124,94,0.08)">
+            <animate attributeName="r" values="48;62;48" dur="2.4s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.5;0;0.5" dur="2.4s" repeatCount="indefinite"/>
+          </circle>
+          <image href="pa_icon_mark_dark.svg" x="168" y="181" width="124" height="124"/>
+        </g>
+
+        <!-- Pipeline lines: node → Africa edges (animated flow) -->
+        <!-- Code → NW Africa (Morocco) -->
+        <path d="M 126 132 C 160 150, 188 184, 208 212"
+              stroke="#0A7C5E" stroke-width="2" class="pipe-flow" opacity="0.75"/>
+        <!-- DB → NE Africa (Egypt) -->
+        <path d="M 338 162 C 310 175, 278 196, 252 210"
+              stroke="#0A7C5E" stroke-width="2" class="pipe-flow-slow" opacity="0.75"/>
+        <!-- Chart → SW Africa (Angola) -->
+        <path d="M 112 338 C 148 315, 183 280, 207 258"
+              stroke="#0A7C5E" stroke-width="2" class="pipe-flow-mid" opacity="0.75"/>
+        <!-- People → East Africa (Horn) -->
+        <path d="M 340 338 C 308 316, 276 278, 258 250"
+              stroke="#0A7C5E" stroke-width="2" class="pipe-flow" opacity="0.75"/>
+
+        <!-- Floating accent dots -->
+        <circle cx="310" cy="100" r="3" fill="rgba(10,124,94,0.45)"/>
+        <circle cx="350" cy="260" r="2" fill="rgba(10,124,94,0.35)"/>
+        <circle cx="150" cy="190" r="2.5" fill="rgba(10,124,94,0.4)"/>
+        <circle cx="175" cy="390" r="2" fill="rgba(10,124,94,0.3)"/>
+        <circle cx="280" cy="420" r="2.5" fill="rgba(10,124,94,0.35)"/>
+
+        <!-- Node labels -->
+        <text x="96"  y="160" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)" font-family="Inter,sans-serif" font-weight="600" letter-spacing="0.05em">CODE</text>
+        <text x="368" y="202" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)" font-family="Inter,sans-serif" font-weight="600" letter-spacing="0.05em">DATA</text>
+        <text x="82"  y="408" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)" font-family="Inter,sans-serif" font-weight="600" letter-spacing="0.05em">INSIGHTS</text>
+        <text x="370" y="398" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)" font-family="Inter,sans-serif" font-weight="600" letter-spacing="0.05em">PEOPLE</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ METRICS ═══════════════════════════ -->
+<div class="metrics">
+  <div class="container metrics-grid">
+    <div class="metric">
+      <div class="metric-num">500+</div>
+      <div class="metric-label">Community Members</div>
+    </div>
+    <div class="metric">
+      <div class="metric-num">20+</div>
+      <div class="metric-label">Real-World Projects</div>
+    </div>
+    <div class="metric">
+      <div class="metric-num">10+</div>
+      <div class="metric-label">Industry Experts</div>
+    </div>
+    <div class="metric">
+      <div class="metric-num">15+</div>
+      <div class="metric-label">African Countries</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════ FEATURES ═══════════════════════════ -->
+<section class="features" id="about">
+  <div class="container">
+    <div class="section-label">What We Do</div>
+    <h2 class="section-title">Four Pillars of Our Community</h2>
+    <p class="section-sub">We bring together learners, builders, and contributors across Africa to grow the continent's data engineering talent.</p>
+
+    <div class="features-grid">
+
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+        <div class="feat-label">Learn</div>
+        <p class="feat-desc">Practical knowledge from industry experts and real projects. Structured learning paths designed for African data engineers.</p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <div class="feat-label">Build</div>
+        <p class="feat-desc">Build data pipelines, work with real datasets, solve real problems. Hands-on experience that translates directly to career opportunities.</p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+          </svg>
+        </div>
+        <div class="feat-label">Contribute</div>
+        <p class="feat-desc">Contribute to open-source projects and grow together. Build a portfolio while making a lasting impact on Africa's data ecosystem.</p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+          </svg>
+        </div>
+        <div class="feat-label">Community</div>
+        <p class="feat-desc">A supportive community of learners, builders and mentors. Connect with peers across Africa who share your passion for data.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ MISSION ═══════════════════════════ -->
+<section class="mission">
+  <div class="mission-inner">
+    <span class="mission-quote-mark">"</span>
+    <blockquote class="mission-quote">
+      Together, we're building the data infrastructure that will shape Africa's tomorrow.
+    </blockquote>
+    <p class="mission-body">
+      Pipeline Africa is more than a learning platform. It's a movement to put Africa at the forefront of the global data economy, one pipeline at a time.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ PILLARS ═══════════════════════════ -->
+<section class="pillars" id="community">
+  <div class="container">
+    <div class="section-label">Join Our Mission</div>
+    <h2 class="section-title">Three Ways to Make an Impact</h2>
+    <p class="section-sub">Whether you're just starting out or a seasoned engineer, there's a place for you in Pipeline Africa.</p>
+
+    <div class="pillars-grid">
+
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+          </svg>
+        </div>
+        <h3 class="pillar-title">JOIN.</h3>
+        <p class="pillar-desc">Be part of the community. Connect with hundreds of African data engineers, learners, and mentors who are building Africa's data future together.</p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+          </svg>
+        </div>
+        <h3 class="pillar-title">BUILD.</h3>
+        <p class="pillar-desc">Build skills. Build solutions. Work on real-world data engineering projects, sharpen your craft, and create solutions that matter for African businesses.</p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <h3 class="pillar-title">IMPACT.</h3>
+        <p class="pillar-desc">Create impact across Africa. Every pipeline you build, every dataset you clean, every contribution you make is a step toward a data-driven Africa.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ PROGRAMS ═══════════════════════════ -->
+<section class="programs" id="workshops">
+  <div class="container">
+    <div class="section-label">Programs</div>
+    <h2 class="section-title">How We Help You Grow</h2>
+    <p class="section-sub">From structured workshops to open labs and curated datasets: everything you need to become a world-class data engineer.</p>
+
+    <div class="programs-grid">
+
+      <div class="prog-card" id="workshops-detail">
+        <span class="prog-emoji">🎓</span>
+        <h3 class="prog-title">Workshops</h3>
+        <p class="prog-desc">Live, instructor-led sessions covering data engineering tools, frameworks, and best practices. Learn from engineers who've done it in production across Africa and beyond.</p>
+        <a href="#" class="prog-link">Explore Workshops <span>→</span></a>
+      </div>
+
+      <div class="prog-card" id="open-lab">
+        <span class="prog-emoji">🔬</span>
+        <h3 class="prog-title">Open Lab</h3>
+        <p class="prog-desc">A collaborative sandbox where you experiment with pipelines, contribute to open-source projects, and get feedback from experienced mentors in real time.</p>
+        <a href="#" class="prog-link">Enter Open Lab <span>→</span></a>
+      </div>
+
+      <div class="prog-card" id="datasets">
+        <span class="prog-emoji">📊</span>
+        <h3 class="prog-title">Datasets</h3>
+        <p class="prog-desc">Access curated African datasets to practise on real, local data. Build solutions grounded in African business context, not just generic toy examples.</p>
+        <a href="#" class="prog-link">Browse Datasets <span>→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ BLOG ═══════════════════════════ -->
+<section class="blog" id="blog">
+  <div class="container">
+    <div class="section-label">Latest from the Community</div>
+    <h2 class="section-title">From the Blog</h2>
+    <p class="section-sub">Tutorials, project write-ups, and insights from engineers building Africa's data infrastructure.</p>
+
+    <div class="blog-grid">
+
+      <div class="blog-card">
+        <div class="blog-thumb" style="background: linear-gradient(135deg, #0d1826, #1a3a2a);">🔧</div>
+        <div class="blog-body">
+          <div class="blog-tag">Tutorial</div>
+          <div class="blog-title">Building Your First Data Pipeline with Apache Airflow</div>
+          <div class="blog-meta">By Amara Diallo · 8 min read</div>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-thumb" style="background: linear-gradient(135deg, #0d1826, #1a2a3a);">📦</div>
+        <div class="blog-body">
+          <div class="blog-tag">Project</div>
+          <div class="blog-title">How We Built a Real-Time Market Data Pipeline for Lagos Traders</div>
+          <div class="blog-meta">By Kofi Mensah · 12 min read</div>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-thumb" style="background: linear-gradient(135deg, #0d1826, #1a1a3a);">🌍</div>
+        <div class="blog-body">
+          <div class="blog-tag">Community</div>
+          <div class="blog-title">Open Datasets You Should Know If You're Doing Data Engineering in Africa</div>
+          <div class="blog-meta">By Fatima Al-Rashid · 6 min read</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ JOIN CTA ═══════════════════════════ -->
+<section class="join-cta" id="join">
+  <div class="join-inner">
+    <h2 class="join-title">Ready to Build Africa's Data Future?</h2>
+    <p class="join-sub">Join hundreds of data engineers across Africa who are learning, building, and making an impact together.</p>
+    <div class="join-btns">
+      <a href="#" class="btn btn-white btn-lg">Join the Community</a>
+      <a href="https://github.com/Pipeline-Africa" target="_blank" rel="noopener" class="btn btn-outline-white btn-lg">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+        </svg>
+        Contribute on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+
+      <div>
+        <div class="footer-brand-text">
+          <div class="footer-brand-name">PIPELINE</div>
+          <div class="footer-brand-africa">AFRICA</div>
+        </div>
+        <p class="footer-desc">An open-source community helping Africans learn data engineering by building real-world projects with industry experts.</p>
+        <span class="footer-tagline-pill">LEARN. BUILD. CONTRIBUTE.</span>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Platform</div>
+        <ul class="footer-links">
+          <li><a href="#workshops">Workshops</a></li>
+          <li><a href="#open-lab">Open Lab</a></li>
+          <li><a href="#datasets">Datasets</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Community</div>
+        <ul class="footer-links">
+          <li><a href="#join">Join Us</a></li>
+          <li><a href="https://github.com/Pipeline-Africa" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-bottom">
+      <span>© 2024 Pipeline Africa. All rights reserved.</span>
+      <span style="color: var(--green-mid); font-weight: 600;">Learn. Build. Contribute.</span>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  // ── Nav scroll effect ──
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 16);
+  });
+
+  // ── Mobile nav toggle ──
+  function toggleNav() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+
+  // ── Close mobile nav on outside click ──
+  document.addEventListener('click', (e) => {
+    const nav = document.getElementById('navbar');
+    if (!nav.contains(e.target)) {
+      document.getElementById('mobileNav').classList.remove('open');
+    }
+  });
+
+  // ── Smooth scroll ──
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id === '#') return;
+      const target = document.querySelector(id);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // ── Fade-in on scroll (Intersection Observer) ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.feat-card, .pillar, .prog-card, .blog-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
