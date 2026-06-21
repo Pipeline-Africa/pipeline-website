@@ -358,13 +358,36 @@
   setInterval(tick, 1000);
 
   // ── Waitlist join ──
-  function joinWaitlist(e) {
+  async function joinWaitlist(e) {
     e.preventDefault();
     const email = document.getElementById('email-input').value.trim();
     if (!email) return;
 
-    document.getElementById('waitlist-form').style.display = 'none';
-    document.getElementById('success-msg').style.display   = 'block';
+    const btn = e.target.querySelector('button');
+    btn.textContent = 'Joining…';
+    btn.disabled = true;
+
+    try {
+      const res = await fetch('https://formspree.io/f/xdarnwrr', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json();
+
+      if (data.ok) {
+        document.getElementById('waitlist-form').style.display = 'none';
+        document.getElementById('success-msg').style.display   = 'block';
+      } else {
+        btn.textContent = 'Join the Waitlist';
+        btn.disabled = false;
+        alert(data.error || 'Something went wrong. Please try again.');
+      }
+    } catch {
+      btn.textContent = 'Join the Waitlist';
+      btn.disabled = false;
+      alert('Could not connect. Please try again.');
+    }
   }
 </script>
 
